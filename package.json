@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "opencode-deepseek-search",
+  "version": "0.1.0",
+  "description": "DeepSeek web search provider for OpenCode's built-in websearch tool.",
+  "type": "module",
+  "license": "MIT",
+  "author": "ShinjuSakamura",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShinjuSakamura/opencode-deepseek-search.git"
+  },
+  "homepage": "https://github.com/ShinjuSakamura/opencode-deepseek-search#readme",
+  "bugs": {
+    "url": "https://github.com/ShinjuSakamura/opencode-deepseek-search/issues"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "websearch",
+    "deepseek",
+    "search"
+  ],
+  "main": "./index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.ts",
+    "deepseek.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/deepseek.test.mjs"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}
